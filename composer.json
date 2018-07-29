@@ -1,0 +1,7 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^2.5",
+        "phpmailer/phpmailer": "^6.0",
+        "sergeytsalkov/meekrodb": "^2.3"
+    }
+}
