@@ -48,15 +48,19 @@ class PixelTrracker {
     }
 
     function to_csv_download($filename = "export.csv", $delimiter=";") {
-        header('Content-Type: application/csv');
-        header('Content-Disposition: attachment; filename="'.$filename.'";');
+        $items = $this->getAll();
 
-        // open the "output" stream
-        // see http://www.php.net/manual/en/wrappers.php.php#refsect2-wrappers.php-unknown-unknown-unknown-descriptioq
-        $f = fopen('php://output', 'w');
+        if(count($items)>0) {
+            header('Content-Type: application/csv');
+            header('Content-Disposition: attachment; filename="'.$filename.'";');
+            $f = fopen('php://output', 'w');
 
-        foreach ($this->getAll() as $line) {
-            fputcsv($f, $line, $delimiter);
+            // writes csv header as first row
+            fputcsv($f, array_keys($items[0]), $delimiter);
+
+            foreach ($items as $line) {
+                fputcsv($f, $line, $delimiter);
+            }
         }
     }
 }
