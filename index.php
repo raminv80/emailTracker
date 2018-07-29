@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 include_once 'app/Setup.php';
 
 //setup application routes
-$app = new  App([ 'entries', 'home', 'ajax-submit' ], 'home');
+$app = new  App([ 'entries', 'home', 'ajax-submit', 'ajax-csv' ], 'home');
 
 $route = isset($_GET['route']) ? trim($_GET['route']) : false;
 

@@ -1,5 +1,6 @@
 <?php $model = new \App\PixelTrracker();?>
 <div class="container">
+    <a href="/ajax-csv" class="btn">Download as CSV</a>
     <table class="table table-striped">
         <thead>
         <tr>
