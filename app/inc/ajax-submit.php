@@ -76,6 +76,7 @@ class AjaxSubmit{
             $mail->SMTPAuth = true;
             $mail->Username = SMTP_USERNAME;
             $mail->Password = SMTP_PASSWORD;
+            $mail->CharSet = 'UTF-8';
             if(SMTP_SECURE === 'yes') $mail->SMTPSecure = "tls"; // Enable TLS encryption, `ssl` also accepted
             $mail->Port = SMTP_PORT;
 

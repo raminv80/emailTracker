@@ -2,9 +2,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ISABELLA BOZICEVIC &#8211; Be More Collective</title>
     <meta name='robots' content='noindex,follow' />
+    <title>Pixel Tracker</title>
     <link rel='dns-prefetch' href='//stackpath.bootstrapcdn.com' />
     <link rel='dns-prefetch' href='//unpkg.com' />
     <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
